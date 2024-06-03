@@ -1,0 +1,79 @@
+/* src/App.css */
+
+body {
+  background-color: #f4f5f7;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-gray-100 {
+  background-color: #f4f5f7;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 32rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.recommendation-button {
+  background-color: #e0f7fa;
+  color: #00796b;
+  border: 2px solid #004d40;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.recommendation-button:hover {
+  background-color: #b2ebf2;
+  transform: translateY(-2px);
+}
