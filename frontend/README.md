@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# LeetMatch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+LeetMatch is a web application that recommends similar LeetCode problems based on a given problem URL. It leverages a machine learning model trained on a dataset of LeetCode solutions to provide similarity recommendations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Sign up and log in using email and password.
+- **Problem Recommendations**: Enter a LeetCode problem URL to receive a list of similar problems.
+- **Interactive UI**: Recommendations are displayed as clickable buttons for easy navigation.
+- **Responsive Design**: Optimized for various screen sizes.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Authentication**: Firebase Authentication
+- **Database**: Firebase Firestore (for user data)
+- **API**: Custom recommendation API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/YOUR_GITHUB_USERNAME/LeetMatch.git
+    cd LeetMatch
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
 
-### `npm run build`
+    - For the frontend:
+      ```bash
+      cd frontend
+      npm install
+      ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - For the backend:
+      ```bash
+      cd backend
+      npm install
+      ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Setup Firebase**:
+    - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+    - Enable Email/Password authentication in the Firebase Authentication settings.
+    - Obtain your Firebase config object from the Firebase Console and replace the placeholder values in `frontend/src/firebase.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Run the application**:
 
-### `npm run eject`
+    - Start the backend server:
+      ```bash
+      cd backend
+      npm start
+      ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Start the frontend development server:
+      ```bash
+      cd frontend
+      npm start
+      ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    The application should now be running at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Sign Up / Log In**:
+    - Use the authentication form to sign up for a new account or log in with an existing account.
 
-## Learn More
+2. **Get Recommendations**:
+    - Enter a LeetCode problem URL in the provided input field and click "Get Recommendations".
+    - The application will display a list of similar problems as clickable buttons.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Log Out**:
+    - Use the "Sign Out" button to log out of your account.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome! Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature/your-feature-name`.
+5. Open a pull request.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any inquiries, please contact [YOUR_EMAIL@example.com].
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
