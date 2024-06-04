@@ -1,8 +1,8 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from model import find_similar_problems, get_problem_vector
-from scraping import extract_problem_name
+from .model import find_similar_problems, get_problem_vector
+from .scraping import extract_problem_name
 
 
 class UrlRequest(BaseModel):
@@ -11,7 +11,6 @@ class UrlRequest(BaseModel):
 
 app = FastAPI()
 
-# Set up CORS
 origins = [
     "http://localhost:3000",  # React frontend
 ]
