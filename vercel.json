@@ -1,11 +1,11 @@
 {
   "functions": {
-    "api/index.py": {
+    "backend/api/index.py": {
       "runtime": "vercel-python@0.5.0"
     }
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/api/(.*)", "destination": "/backend/api/index.py" },
     { "source": "/(.*)", "destination": "/frontend/$1" }
   ]
 }
