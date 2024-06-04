@@ -51,6 +51,7 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
-    "vite": "^5.2.12"
+    "vite": "^5.2.12",
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
   }
 }
